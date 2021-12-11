@@ -1,0 +1,353 @@
+body {
+    background-color: #c857f5;
+    color           : #221811;
+    font-family     : Verdana, Arial, sans-serif;
+}
+
+header {
+    background-color: #bd04e2;
+    text-align      : center;
+    font-family     : Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size       : larger;
+}
+
+.logo img {
+
+    width : 77px;
+    height: 77px;
+
+}
+
+h1 {
+    line-height: 200%;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+nav {
+    font-weight     : bold;
+    text-align      : center;
+    background-color: #bd04e2;
+    width           : auto;
+    height          : auto;
+}
+
+nav ul {
+    list-style-type     : none;
+    padding-inline-start: 0px;
+
+}
+
+nav a {
+    text-decoration: none;
+    padding        : 30px;
+}
+
+nav li {
+    display  : inline;
+    font-size: larger;
+}
+
+a:link {
+    color: #1bd602;
+}
+
+a:visited {
+    color: #13570a;
+}
+
+nav a:hover {
+    color     : #57f064;
+    transition: color 0.5s linear;
+}
+
+
+
+#back {
+
+    text-align    : center;
+    padding-bottom: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+footer {
+    background-color: #bd04e2;
+    font-size       : small;
+    font-style      : italic;
+    text-align      : center;
+}
+
+#principal {
+    width       : 80%;
+    margin-right: auto;
+    margin-left : auto;
+    font-family : Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#home {
+    font-size       : larger;
+    background-color: #bd04e2;
+    width           : fit-content;
+    padding-right   : 10px;
+}
+
+#home>ul {
+    list-style-type: square;
+}
+
+#home li {
+    padding-bottom: 15px;
+    padding-top   : 15px;
+}
+
+.photoalbum>img {
+    width : 209px;
+    height: 221px;
+}
+
+.album {
+    margin-bottom   : 10px;
+    width           : 80%;
+    padding-left    : 10px;
+    padding-bottom  : 23px;
+    background-color: #bd04e2;
+}
+
+.fotosmerch {
+    align-items   : center;
+    display       : flex;
+    flex-direction: row;
+    width: 80%;
+   
+   
+}
+
+.fotosmerch img {
+    width : 209px;
+    height: 241px;
+   
+    
+}
+
+.fotosmerch>div {
+    padding    : 50px;
+    margin-left: 5%;
+   
+   
+    
+}
+
+.fotosmerch a:hover img{
+
+    border: #bd04e2 10px solid;
+    width : 189px;
+    height: 221px;
+
+
+}
+
+.fotosmerch figcaption {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align : center;
+}
+
+.info {
+    margin-bottom   : 10px;
+    margin-left     : 230px;
+    width           : 80%px;
+    height          : 150px;
+    padding-right   : 10px;
+    padding-bottom  : 23px;
+    background-color: #bd04e2;
+    word-break      : keep-all;
+    font-size       : 18px;
+}
+
+.info>p {
+    padding     : auto;
+    padding-left: 10px;
+}
+
+.infoPhoto>img {
+    width   : 209px;
+    height  : 221px;
+    position: relative;
+    bottom  : 320px;
+}
+
+.concertclass {
+    padding-bottom: 10px;
+}
+
+.concert {
+    background-color: #bd04e2;
+    margin-right    : 290px;
+}
+
+.concert>p {
+    padding     : auto;
+    padding-left: 10px;
+}
+
+.concert>a {
+    padding     : auto;
+    padding-left: 10px;
+}
+
+#concertfoto1 {
+    position: relative;
+    bottom  : 100px;
+    right   : 50px;
+}
+
+#concertfoto2 {
+    position: relative;
+    bottom  : 90px;
+    right   : 50px;
+}
+
+@media screen and (max-width:700px) {
+    #home {
+        width: auto;
+    }
+
+    nav {
+        width     : auto;
+        height    : auto;
+        padding   : auto;
+        
+        
+    }
+
+    nav a {
+        text-decoration: none;
+        padding        : 10px;
+       
+    }
+
+    nav li {
+        display  : flex;
+        font-size: larger;
+        display   : block;
+        text-align: center;
+    }
+
+    .fotosmerch {
+        align-items   : center;
+        flex-direction: column;
+    }
+
+    .info {
+        margin-left: 0;
+        width      : auto;
+        height     : auto;
+        word-break : keep-all;
+    }
+
+    .infoPhoto {
+        flex-direction: column;
+        display       : flex;
+        
+    }
+
+    .infoPhoto>img {
+        width        : auto;
+        height       : auto;
+        position: relative;
+        top: 0px;
+        margin-bottom: 10px;
+        
+    }
+
+    .photoalbum>.album {
+        width: auto;
+    }
+
+    .photoalbum {
+        flex-direction: column;
+        display       : flex;
+    }
+
+    .photoalbum>img {
+        width : auto;
+        height: auto;
+    }
+
+    #principal>main>h2>img {
+        display: none;
+    }
+
+    #concertfoto1 {
+        display: none;
+    }
+
+    #concertfoto2 {
+        display: none;
+    }
+
+    .concert {
+        width       : auto;
+        padding     : auto;
+        margin-right: 0px;
+    }
+
+    .concert>p {
+
+        margin-right: 10px;
+
+    }
+}
+
+@media screen and (max-width:1100px) {
+    #home {
+        width: fit-content;
+    }
+
+    nav li {
+
+
+        padding-bottom: 12px;
+
+    }
+
+    .fotosmerch>div {
+        padding    : 20px;
+        margin-left: 55px;
+        width: auto;
+        
+    }
+
+
+    .info {
+
+        width     : auto;
+        word-break: keep-all;
+    }
+
+    .infoPhoto>img {
+
+        position: relative;
+        bottom  : 300px;
+    }
+
+    .album {
+        word-break: keep-all;
+        width     : auto;
+    }
+
+    nav {
+        width      : auto;
+        height     : auto;
+        margin-left: 0px;
+        padding    : auto;
+    }
+
+    .concert {
+        width  : auto;
+        padding: auto;
+    }
+}
